@@ -1,8 +1,6 @@
 import aboutImage from '../assets/ianAboutImg.webp';
+import { sendDriveGoogle } from './utils/sendDriveGoogle';
 
-const sendDriveGoogle = () => {
-  window.open('https://drive.google.com/drive/folders/1yOk7qP_I19kRjvjldjEYlc6C14sbHAYz', '_blank');
-};
 
 const About = () => {
   return (
@@ -59,7 +57,7 @@ const About = () => {
                 <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Calzado</span>
               </div>
               <div className="text-center p-3 md:p-4 bg-blue-500 rounded-lg hover:shadow-md transition-all cursor-pointer flex items-center justify-center">
-                <a onClick={sendDriveGoogle} className="block text-accent font-bold text-xl md:text-2xl">PORTFOLIO</a>
+                <a onClick={() => sendDriveGoogle('https://drive.google.com/drive/folders/1yOk7qP_I19kRjvjldjEYlc6C14sbHAYz')} className="block text-accent font-bold text-xl md:text-2xl">PORTFOLIO</a>
               </div>
             </div>
           </div>
