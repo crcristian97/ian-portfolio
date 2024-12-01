@@ -13,7 +13,6 @@ const isValidUrl = (string = '') => {
 
 const sendWhatsAppMessage = () => {
   try {
-    // Formateo del número - eliminar caracteres no numéricos
     const formattedPhone = '1166026464';
 
     // Preparación del mensaje
