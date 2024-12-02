@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import heroImageIan from "../assets/ianHeroImg.webp";
 
 const Hero = () => {
-  const words = ["ACTOR", "MODELO", "MODELO DE PASARELA"];
+  const words = ["ACTOR", "MUSICO", "MODELO", "INFLUENCER"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
@@ -18,8 +18,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center text-center md:text-left order-2 md:order-1">
             <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Mi nombre es
-              <br />
+             
               <span className="text-5xl md:text-6xl lg:text-7xl">IAN LUNA</span>
             </h1>
             <div className="flex flex-wrap justify-center md:justify-start gap-2">

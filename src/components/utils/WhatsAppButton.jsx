@@ -34,9 +34,9 @@ const sendWhatsAppMessage = () => {
 
 const WhatsAppButton = ({ phoneNumber = '', message = '', size = 'md', className = '' }) => {
   const sizes = {
-    sm: 'p-5 text-4xl',    // Aumentado de p-2 text-xl
-    md: 'p-6 text-5xl',    // Aumentado de p-3 text-2xl
-    lg: 'p-7 text-6xl'  
+    sm: 'p-2 text-xl',    // Reducido
+    md: 'p-3 text-2xl',   // Reducido
+    lg: 'p-4 text-3xl'    // Reducido
   };
 
   const handleClick = () => {
