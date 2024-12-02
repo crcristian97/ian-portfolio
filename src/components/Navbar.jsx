@@ -3,7 +3,8 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = (e) => {
+    e.preventDefault();
     setIsOpen(!isOpen);
   };
 

@@ -18,6 +18,7 @@ import IMG_6420 from '../assets/IMG_6420.webp';
 import patriacarajo from '../assets/patriacarajo.webp';
 import patriacarajo2 from '../assets/patriacarajo2.webp';
 import IMG_5711 from '../assets/IMG_5711.webp';
+import { filterByCategory } from './utils/filterFunction';
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('TODAS');
@@ -46,9 +47,7 @@ const Portfolio = () => {
   ];
 
   // Filtrar proyectos según la categoría seleccionada
-  const filteredProjects = projects.filter(project => 
-    selectedCategory === 'TODAS' ? true : project.category === selectedCategory
-  );
+  const filteredProjects = filterByCategory(projects, selectedCategory);
 
   return (
     <div className="py-20 bg-gray-50" id="trabajos">
