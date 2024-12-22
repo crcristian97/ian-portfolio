@@ -1,11 +1,11 @@
 import React from "react";
 import { sendDriveGoogle } from "./utils/sendDriveGoogle";
 import aboutImage from '../assets/ianAboutImg.webp';
-import ModelPortfolio1 from '../assets/ModelPortfolio1.webp';
-import ModelPortfolio2 from '../assets/ModelPortfolio2.webp';
-import ModelPortfolio3 from '../assets/ModelPortfolio3.webp';
-import ModelPortfolio4 from '../assets/ModelPortfolio4.webp';
-import ModelPortfolio5 from '../assets/ModelPortfolio5.webp';
+import ModelPortfolio1 from '../assets/ianBibliografia.webp';
+import ModelPortfolio2 from '../assets/ianBibliografia2.webp';
+import ModelPortfolio3 from '../assets/ianBibliografia3.webp';
+import ModelPortfolio4 from '../assets/ianBibliografia4.webp';
+import ModelPortfolio5 from '../assets/ianBibliografia5.webp';
 
 
 const ModelPortfolio = () => {
@@ -38,14 +38,20 @@ const ModelPortfolio = () => {
             <div className="bg-zinc-900 p-8">
               <h2 className="text-2xl mb-4">Soy Ian -</h2>
               <p className="text-gray-300 mb-6">
-              Soy un actor apasionado y versátil con experiencia en teatro, cine y televisión. Mi dedicación al arte dramático me ha permitido desarrollar una amplia gama de habilidades interpretativas, desde papeles dramáticos hasta comedias. También me desempeño como modelo profesional, participando en pasarelas y sesiones fotográficas.
+                Un artista apasionado que vive cada día al máximo. Hace no mucho tiempo descubrí que mi lugar está en el escenario y frente a las cámaras, y hoy estoy trabajando para hacer realidad mis sueños como actor, cantante y músico.
+              </p>
+              <p className="text-gray-300 mb-6">
+                Soy una persona vibrante, curiosa y siempre en busca de nuevos desafíos. Ya he tenido mis primeras experiencias tanto frente a cámara como en el escenario, lo que me confirmó que este camino es lo que amo profundamente.
+              </p>
+              <p className="text-gray-300 mb-6">
+                Mi formación incluye clases intensivas de actuación, canto y guitarra con distintos profesores que me han ayudado a crecer. Actualmente, estudio en la UNA, porque estoy convencido de que un artista nunca deja de aprender. Siempre busco evolucionar, tanto en lo profesional como en lo personal. Mis metas son claras: ser un actor profesional, vivir de mi arte y llegar al corazón de las personas con mis interpretaciones.
+              </p>
+              <p className="text-gray-300 mb-6">
+                Creo firmemente que el arte es una herramienta para inspirar y conectar. Por eso, en cada proyecto que emprendo, pongo todo mi corazón y energía. Estoy emocionado por las oportunidades que vienen y agradecido por cada paso que me acerca a mis sueños.
               </p>
               <p className="text-gray-300">
-                Mi formación incluye estudios en actuación, expresión corporal y técnicas de interpretación. Me caracterizo por mi profesionalismo, versatilidad y compromiso con cada proyecto. Siempre busco nuevos desafíos que me permitan crecer como artista y conectar con el público de manera auténtica y memorable.
+                ¿Querés saber más sobre mi trabajo? ¡Te invito a explorar esta página, donde encontrarás todo.
               </p>
-              {/* <button className="mt-4 px-4 py-2 border border-white hover:bg-white hover:text-black transition-colors">
-                MORE ABOUT JORDAN →
-              </button> */}
             </div>
 
             {/* Measurements */}
@@ -114,7 +120,7 @@ const ModelPortfolio = () => {
             <h2 className="text-2xl mb-4">CONTACTO</h2>
             <div className="space-y-2 text-gray-300">
               <p>IAN LUNA</p>
-              <p>IAN.LUNA@GMAIL.COM</p>
+              <p>Ianlunatrabajos@gmail.com</p>
               <p className="text-sm text-gray-400">
                 UBICACIÓN: Buenos Aires, AR • Argentina 
               </p>
