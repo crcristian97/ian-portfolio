@@ -6,7 +6,7 @@ import ModelPortfolio2 from '../assets/ianBibliografia2.webp';
 import ModelPortfolio3 from '../assets/ianBibliografia3.webp';
 import ModelPortfolio4 from '../assets/ianBibliografia4.webp';
 import ModelPortfolio5 from '../assets/ianBibliografia5.webp';
-
+import Boxbiography from "./Boxbiography";
 
 const ModelPortfolio = () => {
   return (
@@ -112,19 +112,12 @@ const ModelPortfolio = () => {
 
         {/* Agency & Contact */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-zinc-900 p-8">
-            <h2 className="text-2xl mb-4">AGENCIA</h2>
-            <p className="text-gray-400">ACTOR INDEPENDIENTE</p>
-          </div>
-          <div className="bg-zinc-900 p-8">
-            <h2 className="text-2xl mb-4">CONTACTO</h2>
-            <div className="space-y-2 text-gray-300">
-              <p>IAN LUNA</p>
-              <p>Ianlunatrabajos@gmail.com</p>
-              <p className="text-sm text-gray-400">
-                UBICACIÓN: Buenos Aires, AR • Argentina 
-              </p>
-            </div>
+          <Boxbiography title="AGENCIA" description="ACTOR INDEPENDIENTE" />
+          <div>
+            <Boxbiography title="CONTACTO" description="IAN LUNA" />
+            <p className="mt-2 text-zinc-400">
+              UBICACIÓN: Buenos Aires, AR • Argentina
+            </p>
           </div>
         </div>
 
