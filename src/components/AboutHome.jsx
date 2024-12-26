@@ -1,6 +1,6 @@
 import aboutImage from '../assets/ianAboutImg.webp';
 import { sendDriveGoogle } from './utils/sendDriveGoogle';
-
+import BoxSummary from './BoxSummary';
 
 const AboutHome = () => {
   return (
@@ -28,47 +28,19 @@ const AboutHome = () => {
             {/* Medidas Section */}
             <h2 className="text-2xl font-bold mb-3 text-center lg:text-left">Medidas</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-6">
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="block text-accent font-bold text-xl md:text-2xl">174 cm</span>
-                <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Altura</span>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="block text-accent font-bold text-xl md:text-2xl">70 kg</span>
-                <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Peso</span>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="block text-accent font-bold text-xl md:text-2xl">M</span>
-                <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Remera</span>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="block text-accent font-bold text-xl md:text-2xl">42</span>
-                <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Pantalón</span>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="block text-accent font-bold text-xl md:text-2xl">42</span>
-                <span className="text-gray-500 text-xs md:text-sm uppercase tracking-wider">Calzado</span>
-              </div>
+              <BoxSummary value="70 kg" label="Peso" />
+              <BoxSummary value="M" label="Remera" />
+              <BoxSummary value="42" label="Pantalón" />
+              <BoxSummary value="42" label="Calzado" />
             </div>
 
             {/* Skills Section */}
             <h2 className="text-2xl font-bold mb-3 text-center lg:text-left">Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="text-2xl">⚽</span>
-                <p className="mt-1 text-gray-600">Fútbol</p>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="text-2xl">🏃</span>
-                <p className="mt-1 text-gray-600">Deportista</p>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="text-2xl">🏊</span>
-                <p className="mt-1 text-gray-600">Natación</p>
-              </div>
-              <div className="text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-all">
-                <span className="text-2xl">⛷️</span>
-                <p className="mt-1 text-gray-600">Ski</p>
-              </div>
+              <BoxSummary value="⚽" label="Fútbol" />
+              <BoxSummary value="🏃" label="Deportista" />
+              <BoxSummary value="🏊" label="Natación" />
+              <BoxSummary value="⛷️" label="Ski" />
             </div>
           </div>
         </div>

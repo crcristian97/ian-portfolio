@@ -1,5 +1,5 @@
 import { dataTeatro } from "./utils/dataTeatro";
-function TheaterWork({ title = '', description = '', director = '', location = '', year = '', imgSrc = '', reverse = false }) {
+function TheaterWork({ title = '', description = '', director = '', location = '', year = '', imgSrc = '', reverse = false, temporada = '', experiencia = '' }) {
   return (
     <section className="mb-16 bg-white shadow rounded-lg overflow-hidden">
       <div className={`md:flex ${reverse ? "flex-row-reverse" : ""}`}>
@@ -15,6 +15,8 @@ function TheaterWork({ title = '', description = '', director = '', location = '
         <div className="md:w-1/2 p-8">
           <h2 className="text-2xl font-bold mb-4">{title}</h2>
           <p className="text-gray-600 mb-4">{description}</p>
+          <p className="text-gray-600 mb-4">Temporada: {temporada.primerTemporada} | Funciones: {temporada.funciones}</p>
+          <p className="text-gray-600 mb-4">Experiencia: {experiencia}</p>
           <p className="text-sm text-gray-500">
             Director: {director} | {location} | {year}
           </p>
@@ -38,11 +40,7 @@ export default function TheaterWorks() {
           <TheaterWork key={index} {...work} />
         ))}
       </main>
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Carlos Mendoza. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+     
     </div>
   );
 }
