@@ -28,6 +28,7 @@ const AboutHome = () => {
             {/* Medidas Section */}
             <h2 className="text-2xl font-bold mb-3 text-center lg:text-left">Medidas</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-6">
+              <BoxSummary value="1.73 cm" label="Altura" />
               <BoxSummary value="70 kg" label="Peso" />
               <BoxSummary value="M" label="Remera" />
               <BoxSummary value="42" label="Pantalón" />
