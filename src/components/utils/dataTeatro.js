@@ -1,6 +1,23 @@
 import HEGEM from "../../assets/HEGEM.webp";
 import IMG_5278 from "../../assets/IMG_5278.webp";
+import elpicaflor from "../../assets/elpicaflor.webp";
+
 export const dataTeatro = [
+    {
+      title: "Hegemónicos",
+      description:
+        "Una familia tras la muerte de su padre recibe la sorpresiva noticia que tiene dos nuevos hermanos que reclaman la herencia, conflictos risas y confusiones.",
+      temporada: {  
+        primerTemporada: "2024",
+        funciones: "3 funciones en diciembre"
+      },
+      experiencia: "Fue una experiencia muy linda, la obra de teatro la escribimos entre todo el elenco, de lo cual aprendí mucho.",
+      director: "Ezequiel Castillo",
+      location: "Teatro brilla Cordelia",
+      year: 2022,
+      imgSrc: elpicaflor,
+      reverse: true,
+    },
     {
       title: "Hegemónicos",
       description:
